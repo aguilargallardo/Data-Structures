@@ -14,12 +14,31 @@ class Stack:
     def __init__(self):
         self.size = 0
         # self.storage = ?
+        self.storage = list()
 
     def __len__(self):
-        pass
+        return len(self.storage)
 
     def push(self, value):
-        pass
+        return self.storage.append(value)
 
     def pop(self):
-        pass
+        return self.storage.pop()
+
+
+
+class Stack:
+    def __init__(self, value = None, next_node = None):
+        self.size = 0
+        # the value at this 
+        self.value = value
+        self.next_node = next_node
+
+    def __len__(self):
+        return len(self.storage)
+
+    def push(self, value):
+        return self.storage.append(value)
+
+    def pop(self):
+        return self.storage.pop()
